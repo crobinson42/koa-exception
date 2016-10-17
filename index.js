@@ -9,7 +9,7 @@ module.exports = function () {
             console.error('---> Global Exception Handler:', e.message);
             msg = e.message;
             if (e.name == "token_error") code = 302;
-            if (e.name == "MongoError") msg = e.message = "操作失败,系统异常!";
+            if (e.name == "MongoError") msg = e.message = "Ops! The system is busy now!";
         } finally {
             if (msg) {
                 this.body = { code: code, msg: msg };

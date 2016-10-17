@@ -32,7 +32,7 @@ var KoaEx = require('koa-exception');
 KoaEx must be used first before any other middleware, and then 
 it will catch all of the exception throwed by route,dao and os.
 */       
-app.use(KoaEx);
+app.use(KoaEx());
 
 var port = 3000;
 app.listen(port, function() {
