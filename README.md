@@ -2,6 +2,8 @@
 
 It's a koa middleware. Dependency on `koa@1.x`.
 
+[Chinese Simplified](https://github.com/brainqi1991/koa-exception/blob/master/README_CN.md)
+
 # Why
 
 When i use koa to dev my project that find everytime i have to
