@@ -7,11 +7,13 @@ module.exports = function (locale) {
         try {
             yield next;
         } catch (e) {
-            console.error('---> Global Exception Handler: \x1b[31m%s\x1b[0m => %s',e.name, e.message);
+            console.error('---> Global Exception Handler: \x1b[31m%s\x1b[0m => %s', e.name, e.message);
             msg = e.message;
 
             if (e.name == "token_error") {
                 code = 302;
+            } else if (["login_error", "checkcode_error"].indexOf(e.name) > -1) {
+                // Do nothing. Just output origin message.
             } else {
                 // internationalization
                 switch (_locale) {
