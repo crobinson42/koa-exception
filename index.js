@@ -12,7 +12,7 @@ module.exports = function (locale) {
 
             if (e.name == "token_error") {
                 code = 302;
-            } else if (["login_error", "checkcode_error"].indexOf(e.name) > -1) {
+            } else if (["login_error", "checkcode_error", "Error"].indexOf(e.name) > -1) {
                 // Do nothing. Just output origin message.
             } else {
                 // internationalization
