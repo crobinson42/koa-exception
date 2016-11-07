@@ -1,6 +1,6 @@
 {
   "name": "koa-exception",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Exception Handler Middleware Base on Koa@1.x",
   "main": "index.js",
   "scripts": {
