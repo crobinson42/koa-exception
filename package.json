@@ -1,7 +1,7 @@
 {
   "name": "koa-exception",
-  "version": "1.0.2",
-  "description": "Exception Handler Middleware Base on Koa@1.x",
+  "version": "next",
+  "description": "Exception Handler Middleware Base on Koa@2.x",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/brainqi1991/koa-exception.git"
   },
   "keywords": [
-    "Koa",
+    "Koa@next Koa@2",
     "Exception",
     "Handler"
   ],
