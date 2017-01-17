@@ -1,6 +1,6 @@
 # koa-exception
 
-It's a koa middleware. Dependency on `koa@1.x`.
+It's a koa middleware. Dependency on `koa@2`.
 
 [Chinese Simplified](https://github.com/brainqi1991/koa-exception/blob/master/README_CN.md)
 
