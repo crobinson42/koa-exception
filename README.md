@@ -2,7 +2,7 @@
 
 It's a koa middleware. Dependency on `koa@2`.
 
-[Chinese Simplified](https://github.com/brainqi1991/koa-exception/blob/master/README_CN.md)
+[Chinese Simplified](https://github.com/qixin1991/koa-exception/blob/master/README_CN.md)
 
 # Why
 

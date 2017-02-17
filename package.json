@@ -1,6 +1,6 @@
 {
   "name": "koa-exception",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Exception Handler Middleware Base on Koa@2.x",
   "main": "index.js",
   "scripts": {
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brainqi1991/koa-exception.git"
+    "url": "git+https://github.com/qixin1991/koa-exception.git"
   },
   "keywords": [
     "Koa@next Koa@2",
     "Exception",
     "Handler"
   ],
-  "author": "Brain Qi <brainqi@outlook.com>",
+  "author": "Qi Xin <me@qixin.io>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brainqi1991/koa-exception/issues"
+    "url": "https://github.com/qixin1991/koa-exception/issues"
   },
-  "homepage": "https://github.com/brainqi1991/koa-exception#readme"
+  "homepage": "https://github.com/qixin1991/koa-exception#readme"
 }
