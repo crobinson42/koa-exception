@@ -1,9 +1,9 @@
 // 异常统一处理器: 捕获业务代码抛出的异常,用户也可自己手动捕获异常,手动捕获后将不会被该处理器处理.
 module.exports = function (locale) {
     return async (ctx,next) => {
-        var _locale = locale || 'EN';
-        var msg;
-        var code = 500;
+        let _locale = locale || 'EN';
+        let msg;
+        let code = 500;
         try {
             await next();
         } catch (e) {
