@@ -7,7 +7,7 @@ module.exports = function (locale) {
         try {
             yield next;
         } catch (e) {
-            console.error('---> Global Exception Handler: \x1b[31m%s\x1b[0m => %s', e.name, e.message);
+            console.error('---> Global Exception Handler: \x1b[31m%s\x1b[0m => %s\n%s', e.name, e.message, e.stack);
             msg = e.message;
 
             if (e.name == "token_error") {
