@@ -1,11 +1,11 @@
 // 异常统一处理器: 捕获业务代码抛出的异常,用户也可自己手动捕获异常,手动捕获后将不会被该处理器处理.
 module.exports = function (locale) {
-    return function* (next) {
-        var _locale = locale || 'EN';
-        var msg;
-        var code = 500;
+    return async (ctx,next) => {
+        let _locale = locale || 'EN';
+        let msg;
+        let code = 500;
         try {
-            yield next;
+            await next();
         } catch (e) {
             console.error('---> Global Exception Handler: \x1b[31m%s\x1b[0m => %s\n%s', e.name, e.message, e.stack);
             msg = e.message;
@@ -33,7 +33,7 @@ module.exports = function (locale) {
 
         } finally {
             if (msg) {
-                this.body = { code: code, msg: msg };
+                ctx.body = { code: code, msg: msg };
             }
         }
     }
